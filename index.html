@@ -17,7 +17,6 @@
         <img class="img1" src="6666.png" alt=''>
 
 
-        <script src="javascript.js"></script>
 
         <nav class="navigation">
             <a href="#services">Services</a>
@@ -29,7 +28,7 @@
     <section class="main1">
 
 
-        <h5 class='logo2' id="countdown"></h5>
+        <h2 id="countdown"></h2>
 
 
 
@@ -161,7 +160,7 @@
             const hours = Math.floor(remainingTime % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
             const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
-            document.getElementById('countdown').innerHTML = `Days ${days}  hours:${hours} minutes: ${minutes} seconds: ${seconds} :`;
+            document.getElementById('countdown').innerHTML = `Days :${days}  hours:${hours} minutes: ${minutes} seconds: ${seconds} `;
         }
         setInterval(updateCountdown, 1000);
     </script>
@@ -181,4 +180,3 @@
 
 
 </html>
-
