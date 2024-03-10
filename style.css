@@ -28,14 +28,6 @@ h1 {
 }
 
 /* تنسيق مؤقت العد التنازلي */
-#countdown {
-    text-align: center;
-    font-size: 1.2em;
-    color: #E2CDC6;
-    margin-top: 0.2em;
-    padding-right: 0.2em;
-    padding-bottom: 0.2em;
-}
 
 header {
     background-color: #491344;
@@ -104,7 +96,11 @@ video {
     color: white;
     padding: 3.125em;
 }
-
+.main1 h2{
+    color: #eabcbc;
+    font-size: 1em;
+    padding-top: 10em;
+}
 .main1 {
     width: 100%;
     min-height: 50vh;
@@ -293,7 +289,7 @@ video {
 }
 
 .footer {
-    background-color: #353831;
+    background-color: #290b26;
     color: #fff;
     padding: 2em;
     display: flex;
@@ -313,4 +309,3 @@ video {
     font-size: 1.3em;
     padding: 0 12px 0 0;
 }
-
