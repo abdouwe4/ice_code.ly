@@ -37,6 +37,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 }
 
 .logo{
@@ -221,43 +222,10 @@ video {
 
 
 
-.projects .content{
-    margin-top: 1.875em;
-}
 
-.project-card {
-    background-color: #fff;
-    border: 1px solid #fff;
-    min-height: 8.75em;
-    width: 14.375em;
-    overflow: hidden;
-    border-radius: 0.625em;
-    margin: 1.25em;
-    transition: 0.7s ease;
-}
 
-.project-card:hover {
-   transform: scale(1.1);
-}
 
-.project-card:hover .project-image {
-    opacity: 0.9;
- }
- .project-card:hover .project-image {
-    opacity: 0.9;
- }
-.project-image img{
-    width: 100%
-}
 
-.project-info {
-    padding: 0.0625em;
-}
-
-.project-category {
-    font-size: 0.8em;
-    color: #000;
-}
 
 .project-title {
     display: flex;
@@ -267,26 +235,7 @@ video {
     margin-top: 10px;
 }
 
-.more-details {
-    text-decoration: none;
-    color: #353831;
-}
 
-.more-details:hover {
-    color: #353831;
-}
-
-.contact .icon{
-    font-size: 4.5em;
-}
-
-.contact .info h3 {
-    color: #000;
-}
-
-.contact .info p {
-    font-size: 1.5em;
-}
 
 .footer {
     background-color: #290b26;
@@ -309,3 +258,19 @@ video {
     font-size: 1.3em;
     padding: 0 12px 0 0;
 }
+
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    box-shadow: 5em 1em 3em rgba(75, 18, 81, 0.989);
+
+}
+
+.gallery-image {
+    border-radius: 2em;
+    min-width: 20em;
+    height: 15em;
+    object-fit: cover;
+    margin-right: 2em;
+}
+
