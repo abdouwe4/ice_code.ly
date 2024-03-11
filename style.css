@@ -8,7 +8,6 @@
     scroll-behavior: smooth; 
 }
 
-/* تنسيق العناصر الرئيسية */
 body {
     font-family: Arial, sans-serif;
     background-color: #140927fb;
@@ -27,7 +26,6 @@ h1 {
     color: #333;
 }
 
-/* تنسيق مؤقت العد التنازلي */
 
 header {
     background-color: #491344;
