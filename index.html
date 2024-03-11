@@ -41,16 +41,16 @@
             </div>
 
             <div id="hiddenMessage" style="display: none; font-size: 40px; color: rgb(237, 47, 240);" >
-                Coming Soon...
+                coming Soon...
             </div>
         </div>
 </section>
 <section class="ttt1">
     <div id="text-with-border1">
-        <h3 id="d">D</h3>
-        <h3 id="h">H</h3>
-        <h3 id="m">M</h3>
-        <h3 id="s">S</h3>
+        <h3 id="d">Day</h3>
+        <h3 id="h">Hrs</h3>
+        <h3 id="m">Min</h3>
+        <h3 id="s">Sec</h3>
     </div>
 </section>
 
@@ -164,10 +164,12 @@
         </script>
 
 <script>
+    /* عند النقر على الزر، تبديل بين الإخفاء والعرض للقائمة المنسدلة */
 function toggleDropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
+// إغلاق القائمة المنسدلة إذا تم النقر خارجها
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
