@@ -8,34 +8,110 @@
     scroll-behavior: smooth; 
 }
 
+/* تنسيق العناصر الرئيسية */
 body {
     font-family: Arial, sans-serif;
     background-color: #140927fb;
     margin: 0;
-    padding: 0;
+    padding: 0; 
+    padding-top: 6em ;
+    justify-content: center;
+    align-items: center;
 }
 
-.container {
-    max-width: 75em;
-    margin: 0 auto;
-    padding: 1.25em;
-}
 
 h1 {
     text-align: center;
     color: #333;
 }
 
+.ttt {
+    font-size: 27px;
+    padding-top: 25px;
+    padding-left: 40px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: space-between;
+
+}
+#text-with-border #days{
+    
+    border-radius: 15px;
+    border: 4px solid #9b3291;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    color: #E2CDC6;
+    
+    
+}
+#text-with-border #hours{
+    border-radius: 15px;
+    border: 4px solid #9b3291;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    color: #E2CDC6;
+    
+    
+}
+#text-with-border #minutes{
+    border-radius: 15px;
+    border: 4px solid #9b3291;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    color: #E2CDC6;
+    
+    
+}
+#text-with-border #seconds{
+    border-radius: 15px;
+    border: 4px solid #9b3291;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    color: #E2CDC6;
+    
+    
+}
+
+
+.ttt1 {
+    font-size: 18px;
+    padding-top: 5px;
+    display: flex;
+   
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+
+}
+#text-with-border1 h3{
+    margin-left: 55px;
+    padding: 2px;
+    display: inline-block;
+    color: #E2CDC6;
+
+    
+    
+}
+
+    
+    
 
 header {
     background-color: #491344;
     width: 100%;
     height: 5em;
+    top: 0;
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    
 }
 
 .logo{
@@ -80,6 +156,7 @@ header img {
 }
 
 video {
+    padding-bottom: 200px;
     position: fixed;
     top: 0;
     left: 0;
@@ -95,23 +172,19 @@ video {
     color: white;
     padding: 3.125em;
 }
-.main1 h2{
-    color: #eabcbc;
-    font-size: 1em;
-    padding-top: 10em;
-}
-.main1 {
-    width: 100%;
-    min-height: 50vh;
-    display: fixed;
-    padding-left: 3.125em;
-    align-items: center;
-    background: url(4444.mp4) no-repeat;
 
-}
+
+
+
+
+
+    
+
+
 .main {
     width: 100%;
     min-height: 100vh;
+    padding-top: 120px;
     display: flex;
     padding-left: 3.125em;
     align-items: center;
@@ -180,49 +253,6 @@ video {
     margin-bottom: 1.875em;
 }
 
-.content {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: #fff;
-    width: 13.28125em;
-    box-shadow: 0 0.3125em 1.5625em rgba(1 1 1 / 15%);
-    border-radius: 0.625em;
-    padding: 1.5625em;
-    margin: 0.9375em;
-    transition: 0.7s ease;
-}
-
-.card:hover {
-    transform: scale(1.1);
-}
-
-.card .icon {
-    color: #353831;
-    font-size: 5em;
-    text-align: center;
-}
-
-.info {
-    text-align: center;
-}
-
-.info h3{
-    color: #353831;
-    font-size: 0.75em;
-    font-weight: 700;
-    margin: 0.625em;
-}
-
-
-
-
-
-
 
 
 .project-title {
@@ -260,7 +290,7 @@ video {
 .gallery {
     display: flex;
     overflow-x: auto;
-    box-shadow: 5em 1em 1em rgba(75, 18, 81, 0.989);
+    box-shadow: 5em 1em 3em rgba(75, 18, 81, 0.989);
 
 }
 
