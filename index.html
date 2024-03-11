@@ -22,19 +22,27 @@
 
 
 
+     
         <nav class="navigation">
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
+        
     </header>
 
     <section class="ttt">
         <div id="text-with-border">
-            <h3 id="days"></h3>
-            <h3 id="hours"></h3>
-            <h3 id="minutes"></h3>
-            <h3 id="seconds"></h3>
+            <div id="countdown" onclick="showMessage()">
+                <h3 id="days"></h3>
+                <h3 id="hours"></h3>
+                <h3 id="minutes"></h3>
+                <h3 id="seconds"></h3>
+            </div>
+
+            <div id="hiddenMessage" style="display: none; font-size: 40px; color: rgb(237, 47, 240);" >
+                coming Soon...
+            </div>
         </div>
 </section>
 <section class="ttt1">
@@ -52,7 +60,7 @@
 
     
     <section class="main">
-
+ 
 
     
 
@@ -114,30 +122,6 @@
         </div>
     </section>
 
-    <script>
-var targetDate = new Date("may 25, 2024 23:59:59").getTime();
-var countdown = setInterval(function() {
-    var now = new Date().getTime();
-    var distance = targetDate - now;
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    days = String(days).padStart(2, '0');
-    hours = String(hours).padStart(2, '0');
-    minutes = String(minutes).padStart(2, '0');
-    seconds = String(seconds).padStart(2, '0');
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours;
-    document.getElementById("minutes").innerHTML = minutes;
-    document.getElementById("seconds").innerHTML = seconds;
-
-    if (distance < 0) {
-        clearInterval(countdown);
-        document.getElementById("countdown").innerHTML = "انتهى الوقت!";
-    }
-}, 1000);
-    </script>
     <footer class="footer">
         <p class="footer-title">2024 Copyrights @ <span>BIT Forum</span></p>
         <div class="social-icons">
@@ -152,5 +136,61 @@ var countdown = setInterval(function() {
 
 </body>
 
+
+
+<script>
+    var targetDate = new Date("may 25, 2024 23:59:59").getTime();
+    var countdown = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = targetDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        days = String(days).padStart(2, '0');
+        hours = String(hours).padStart(2, '0');
+        minutes = String(minutes).padStart(2, '0');
+        seconds = String(seconds).padStart(2, '0');
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+    
+        if (distance < 0) {
+            clearInterval(countdown);
+            document.getElementById("countdown").innerHTML = "انتهى الوقت!";
+        }
+    }, 1000);
+        </script>
+
+<script>
+function toggleDropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+
+function showMessage() {
+    var messageElement = document.getElementById("hiddenMessage");
+    messageElement.style.display = "block";
+
+    setTimeout(function() {
+        messageElement.style.display = "none";
+    }, 3000); 
+}
+
+
+</script>
 
 </html>
