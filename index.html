@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     
     <meta charset="UTF-8">
@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>BIT Forum</title>
+
 </head>
 
 
 <body>
+    <video autoplay muted loop>
+        <source src="4444.mp4" type="video/mp4">
+    </video>
 
     <header>
         <img class="img1" src="6666.png" alt=''>
@@ -25,13 +29,26 @@
         </nav>
     </header>
 
-    <section class="main1">
+    <section class="ttt">
+        <div id="text-with-border">
+            <h3 id="days"></h3>
+            <h3 id="hours"></h3>
+            <h3 id="minutes"></h3>
+            <h3 id="seconds"></h3>
+        </div>
+</section>
+<section class="ttt1">
+    <div id="text-with-border1">
+        <h3 id="d">D</h3>
+        <h3 id="h">H</h3>
+        <h3 id="m">M</h3>
+        <h3 id="s">S</h3>
+    </div>
+</section>
 
-        <h2 id="countdown"></h2>
 
 
-
-    </section>
+    
 
     
     <section class="main">
@@ -80,6 +97,7 @@
 
 
         <div>
+
             <h2>Hello, We BIT Forum<br><span>BIT Forum</span></h2>
 
             <h3>We will be happy to do business with you</h3>
@@ -92,25 +110,33 @@
                 <a href="#"><i class="fab fa-youtube"></i></a>
 
             </div>
-            <video autoplay muted loop>
-                <source src="4444.mp4" type="video/mp4">
-            </video>
+          
         </div>
     </section>
 
     <script>
-        // مؤقت العد التنازلي
-        const targetDate1 = new Date('2024-05-25T09:00:00');
-        function updateCountdown() {
-            const now = new Date();
-            const remainingTime = targetDate1 - now;
-            const days = Math.floor(remainingTime / (1000 * 60 * 60) /24);
-            const hours = Math.floor(remainingTime % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
-            const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
-            document.getElementById('countdown').innerHTML = `Days :${days}  hours:${hours} minutes: ${minutes} seconds: ${seconds} `;
-        }
-        setInterval(updateCountdown, 1000);
+var targetDate = new Date("may 25, 2024 23:59:59").getTime();
+var countdown = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = targetDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    days = String(days).padStart(2, '0');
+    hours = String(hours).padStart(2, '0');
+    minutes = String(minutes).padStart(2, '0');
+    seconds = String(seconds).padStart(2, '0');
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    if (distance < 0) {
+        clearInterval(countdown);
+        document.getElementById("countdown").innerHTML = "انتهى الوقت!";
+    }
+}, 1000);
     </script>
     <footer class="footer">
         <p class="footer-title">2024 Copyrights @ <span>BIT Forum</span></p>
