@@ -325,6 +325,8 @@ video {
 @media (max-width:330px){
     .ttt1{
         font-size: 0.75em;
+        padding-left: 0.5em;
+
 
     }
     .ttt{
@@ -336,3 +338,21 @@ video {
         font-size: 0.5em;
     }
 }
+
+@media (max-width:250px){
+    .ttt1{
+        font-size: 0.59em;
+        padding-left: 0.4em;
+
+
+    }
+    .ttt{
+        font-size: 0.7em;
+
+    }
+
+    .navigation a{
+        font-size: 0.5em;
+    }
+}
+
