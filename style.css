@@ -17,6 +17,56 @@ body {
     padding-top: 6em ;
 }
 
+header {
+    opacity: 0.95;
+    background-color: #491344;
+    width: 100%;
+    height: 4em;
+    top: 0;
+    position: fixed;
+    
+}
+
+#sidebar {
+    opacity: 0.95;
+    height: auto;
+    width: 0; 
+    z-index: 2; 
+    top: 0;
+    right: 2; 
+    background-color: #310d2e; 
+    overflow-x: hidden; 
+    transition: 0.5s;
+  }
+  
+  #sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  #sidebar a:hover {
+    color: #845380;
+  }
+  
+  .sidebar-btn {
+    position: absolute;
+    top: 0.3em;
+    right: 0.9em;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  
+  #sidebar.open {
+    width: auto;
+  }
 
 h1 {
     text-align: center;
@@ -26,8 +76,6 @@ h1 {
 .ttt {
     font-size: 1.2em;
     padding-top: 0.9375em;
-    padding-left: 2.5em;
-    display: flex;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -87,16 +135,16 @@ h1 {
 
 
 .ttt1 {
-    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.14em;
     padding-top: 0.3125em;
-    display: flex;
-    padding-left: 0.7em;
     text-align: center;
 
 }
 #text-with-border1 h3{
-    margin-left: 2.7em;
-    padding: 0.005em;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
     display: inline-block;
     color: #E2CDC6;
 
@@ -107,17 +155,7 @@ h1 {
     
     
 
-header {
-    background-color: #491344;
-    width: 100%;
-    height: 5em;
-    top: 0;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
+
 
 .logo{
     text-decoration: none;
@@ -161,7 +199,8 @@ header img {
 }
 
 video {
-    padding-bottom: 12.5em;
+    opacity: 0.3;
+    padding-bottom: 10em;
     position: fixed;
     top: 0;
     left: 0;
@@ -305,6 +344,26 @@ video {
     height: 15em;
     object-fit: cover;
     margin-right: 2em;
+}
+
+
+.mySlides {display: none;}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 @media (max-width:390px){
