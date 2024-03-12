@@ -167,24 +167,6 @@
         </script>
 
 <script>
-    /* عند النقر على الزر، تبديل بين الإخفاء والعرض للقائمة المنسدلة */
-function toggleDropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// إغلاق القائمة المنسدلة إذا تم النقر خارجها
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
-
 
 function showMessage() {
     var messageElement = document.getElementById("hiddenMessage");
@@ -198,28 +180,9 @@ function showMessage() {
 
 </script>
 
-<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      slides[slideIndex-1].style.display = "block";
-    }
-    </script>
+
     <script>
-        // دالة لتبديل حالة الشريط الجانبي
-        function toggleSidebar() {
+function toggleSidebar() {
           var sidebar = document.getElementById("sidebar");
           if (sidebar.style.width === "250px") {
             sidebar.style.width = "0";
