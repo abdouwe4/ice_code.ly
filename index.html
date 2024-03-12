@@ -13,6 +13,15 @@
 
 
 <body>
+
+<div id="splash-screen">
+    <video muted autoplay muted loop>
+        <source src="44444.mp4" type="video/mp4">
+    </video>  </div>
+  
+  <div id="page-content" style="display:none;">
+  
+
     <video muted autoplay muted loop>
         <source src="44444.mp4" type="video/mp4">
     </video>
@@ -136,6 +145,7 @@
         </div>
 
     </footer>
+</div>
 
 </body>
 
@@ -191,4 +201,14 @@ function toggleSidebar() {
           }
         }
         </script>
+
+<script>
+
+    window.onload = function() {
+
+      document.getElementById('splash-screen').style.display = 'none';
+
+      document.getElementById('page-content').style.display = 'block';
+    };
+    </script>
 </html>
