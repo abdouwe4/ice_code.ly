@@ -107,30 +107,30 @@ h1 {
 }
 #text-with-border #days{
     
-    border-radius: 0.9375em;
-    border: 0.25em solid #9b3291;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
+    border-radius: 1em;
+    border: 0.25em dotted #9b3291;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     display: inline-block;
     color: #E2CDC6;
     
     
 }
 #text-with-border #hours{
-    border-radius: 0.9375em;
-    border: 0.25em solid #9b3291;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
+    border-radius: 1em;
+    border: 0.25em dotted #9b3291;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     display: inline-block;
     color: #E2CDC6;
     
     
 }
 #text-with-border #minutes{
-    border-radius: 0.9375em;
-    border: 0.25em solid #9b3291;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
+    border-radius: 1em;
+    border: 0.25em dotted #9b3291;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     display: inline-block;
     color: #E2CDC6;
     
@@ -139,10 +139,10 @@ h1 {
 
 
 #text-with-border #seconds{
-    border-radius: 0.9375em;
-    border: 0.25em solid #9b3291;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
+    border-radius: 1em;
+    border: 0.25em dotted #9b3291;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     display: inline-block;
     color: #E2CDC6;
     
@@ -161,7 +161,7 @@ h1 {
 .ttt1 {
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.14em;
+    font-size: 0.85em;
     padding-top: 0.3125em;
     text-align: center;
 
