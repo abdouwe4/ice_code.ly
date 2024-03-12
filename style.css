@@ -8,7 +8,6 @@
     scroll-behavior: smooth; 
 }
 
-/* تنسيق العناصر الرئيسية */
 body {
     font-family: Arial, sans-serif;
     background-color: #140927fb;
@@ -29,7 +28,6 @@ body {
     z-index: 9999;
   }
   
-  /* إخفاء السبلاش سكرين بشكل افتراضي */
   #splash-screen.hidden {
     display: none;
   }
