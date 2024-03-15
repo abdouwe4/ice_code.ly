@@ -103,7 +103,7 @@ h1 {
 
 .ttt {
     font-size: 1.2em;
-    padding-top: 0.9375em;
+    padding-top: 0.5em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -112,7 +112,10 @@ h1 {
 #text-with-border #days{
     height: 100%;
     border-radius: 9999px;
-    border: 4px dotted #9b3291;
+    border: 2px dotted #9b3291;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-right: 0.4em;
     padding-left: 0.5em;
     padding-right: 0.5em;
     display: inline-block;
@@ -121,8 +124,11 @@ h1 {
 }
 #text-with-border #hours{
     height: 100%;
+    margin-right: 0.4em;
     border-radius: 9999px;
-    border: 4px dotted #9b3291;
+    border: 2px dotted #9b3291;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
     display: inline-block;
@@ -131,9 +137,13 @@ h1 {
     
 }
 #text-with-border #minutes{
+    margin-right: 0.4em;
+
     height: 100%;
-    border-radius: 9999px;
-    border: 4px dotted #9b3291;
+    border-radius: 20px;
+    border: 2px dotted #9b3291;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
     display: inline-block;
@@ -144,9 +154,13 @@ h1 {
 
 
 #text-with-border #seconds{
+    margin-right: 0.4em;
+
     height: 100%;
     border-radius: 9999px;
-    border: 4px dotted #9b3291;
+    border: 2px dotted #9b3291;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
     display: inline-block;
@@ -173,8 +187,8 @@ h1 {
 
 }
 #text-with-border1 h3{
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
+    padding-left: 0.8em;
+    padding-right: 1em;
     display: inline-block;
     color: #E2CDC6;
 
@@ -229,9 +243,8 @@ header img {
 }
 
 video {
-    opacity: 0.1;
-    padding-bottom: 10em;
-    position: fixed;
+    opacity: 0.7;
+    padding-top: 2em;
     top: 0;
     left: 0;
     width: 100%;
@@ -239,6 +252,15 @@ video {
     z-index: -1;
 }
 
+#ppp{
+    opacity: 0.8;
+    padding-bottom: 10em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 .content {
     position: relative;
     z-index: 1;
@@ -254,41 +276,52 @@ video {
 
     
 
-
 .main {
-    padding-right: 3em;
+    direction: rtl;
+    text-align: right;
+    padding-right: 1.5em;
     width: 100%;
     min-height: 1vh;
-    padding-top: 7.5em;
-    padding-left: 3.125em;
+    padding-top: 2em;
+    padding-left: 2em;
     background: url(4444.mp4) no-repeat;
     background-size: cover;
 }
 
 .main h2 {
-    color: #8c3594;
+    color: #d7c6d8;
     font-size: 1.4em;
-    font-weight: 700;
+    font-weight: 900;
     
 }
 
 .main h2 span {
+    padding-right: 5px;
     font-family: 'DroidArabicKufiRegular';
-    color: #8c3594;
-    font-size: 0.8em;
+    color: #fdfdfd;
+    font-size: 1.5em;
     font-weight: 100;
     margin-bottom: 1.875em;
 
 }
 
 .main h3 {
+
     color: #fff;
+    font-size: 1em;
+    font-weight: 200;
+    margin-top: 0.8em;
+}
+
+.main h6 {
+
+    padding-right: 0.2em;
+    color: #8c3594;
     font-size: 1.2em;
     font-weight: 200;
     letter-spacing: 0.0625em;
     margin-top: 0.625em;
 }
-
 .main-btn {
     color: #fff;
     background-color: #a98c82a0;
@@ -314,13 +347,17 @@ video {
     padding-right: 1.875em;
 }
 
+
+
 .title {
     display: flex;
     justify-content: center;
     color: #606789;
     font-size: 1.375em;
     font-weight: 800;
-    margin-bottom: 1.875em;
+    margin-bottom: 0.5em;
+    padding-top: 3em;
+
 }
 
 
@@ -330,7 +367,7 @@ video {
     justify-content: space-between;
     text-transform: uppercase;
     font-weight: 800;
-    margin-top: 0625em;
+    margin-top: 0.625em;
 }
 
 
