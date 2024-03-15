@@ -33,7 +33,6 @@ body {
     z-index: 9999;
   }
   
-  /* إخفاء السبلاش سكرين بشكل افتراضي */
   #splash-screen.hidden {
     display: none;
   }
@@ -140,7 +139,7 @@ h1 {
     margin-right: 0.4em;
 
     height: 100%;
-    border-radius: 20px;
+    border-radius: 9999px;
     border: 2px dotted #9b3291;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
