@@ -503,7 +503,7 @@ h1 {
 }
 .projects{
     position: relative;
-    width: 80%;
+    width: 130%;
     
 }
 .projects .content{
@@ -518,7 +518,7 @@ h1 {
     background-color: #310d2e;
     border: 3px solid #cdcbcb;
     min-height: 14em;
-    width: 80%;
+    width: 130%;
     overflow: hidden;
     border-radius: 10px;
     margin: 20px;
